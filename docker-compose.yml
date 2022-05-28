@@ -50,8 +50,8 @@ services:
     tmpfs:
       - /run:exec,size=64M
       - /var/log
-    env_file:
-      - stack.env
+    #env_file:
+    #  - stack.env
    flightradar24:
     image: ghcr.io/sdr-enthusiasts/docker-flightradar24:latest
     tty: true
@@ -68,8 +68,8 @@ services:
       - MLAT=no
     tmpfs:
       - /var/log
-    env_file:
-      - stack.env
+    #env_file:
+    #  - stack.env
    tar1090:
     image: ghcr.io/sdr-enthusiasts/docker-tar1090:latest
     tty: true
@@ -90,8 +90,8 @@ services:
     tmpfs:
       - /run:exec,size=64M
       - /var/log
-    env_file:
-      - stack.env
+    #env_file:
+    #  - stack.env
    watchtower:
     image: containrrr/watchtower:latest
     tty: true
