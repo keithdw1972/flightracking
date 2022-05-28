@@ -134,6 +134,7 @@ services:
      image: keithdw/360:latest
      container_name: 360radar
      restart: always
+     environment:
        - BEASTHOST=192.168.170.7
        - TZ=Europe/London
        - ALT=32.96m
