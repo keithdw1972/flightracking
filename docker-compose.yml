@@ -133,3 +133,12 @@ services:
      build: ./build360
      image: keithdw/360:latest
      container_name: 360radar
+     restart: always
+     environment:
+       - BEASTHOST=192.168.170.7
+       - TZ=Europe/London
+       - ALT=32.96m
+       - LAT=56.051128760570045
+       - LONG=-4.532320559956133
+       - SITEMANE=GartocharnAberKDW
+       - REGION=scotland
