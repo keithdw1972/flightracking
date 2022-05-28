@@ -77,7 +77,7 @@ RUN set -x && \
     cat /VERSIONS
 
 # Copy config files
-COPY etc/ /tmp/
+COPY etc/ /etc/
 
 # Entrypoint is s6-overlay
 ENTRYPOINT [ "/init" ]
